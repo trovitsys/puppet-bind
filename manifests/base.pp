@@ -64,6 +64,17 @@ class bind::base inherits bind::params {
     require => Package['bind9'],
   }
 
+  file {$bind::params::slave_directory:
+    ensure  => directory,
+    owner   => root,
+    group   => root,
+    mode    => '0755',
+    purge   => true,
+    force   => true,
+    recurse => true,
+    require => Package['bind9'],
+  }
+
   file {$bind::params::keys_directory:
     ensure  => directory,
     owner   => root,

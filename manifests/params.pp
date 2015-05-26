@@ -19,6 +19,7 @@ class bind::params {
         $zones_directory      = '/etc/bind/zones'
         $pri_directory        = '/etc/bind/pri'
         $keys_directory       = '/etc/bind/keys'
+        $slave_directory      = '/etc/bind/slave'
         $dynamic_directory    = '/etc/bind/dynamic'
     }
     elsif $::osfamily == 'RedHat' {
@@ -35,6 +36,7 @@ class bind::params {
         $zones_directory      = '/etc/named/zones'
         $pri_directory        = '/etc/named/pri'
         $keys_directory       = '/etc/named/keys'
+        $slave_directory      = '/etc/named/slave'
         $dynamic_directory    = '/etc/named/dynamic'
     }
     else {
