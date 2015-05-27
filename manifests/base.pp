@@ -94,7 +94,7 @@ class bind::base inherits bind::params {
     require => Package['bind9'],
   }
 
-  file { "${bind::params::config_base_dir}/${bind::params::named_local_name}":
+  file { "${bind::params::config_base_dir}/${bind::params::named_options_name}":
     ensure  => file,
     owner   => root,
     group   => $bind::params::bind_group,
