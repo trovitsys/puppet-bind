@@ -99,7 +99,7 @@ class bind::base inherits bind::params {
     owner   => root,
     group   => $bind::params::bind_group,
     mode    => '0640',
-    content => template('bind/options.erb')
+    content => template('bind/options.erb'),
     require => Package['bind9'],
   }
 
