@@ -67,8 +67,8 @@ class bind::base inherits bind::params {
   file {$bind::params::slave_directory:
     ensure  => directory,
     owner   => root,
-    group   => root,
-    mode    => '0755',
+    group   => $bind::params::bind_group,
+    mode    => '0770',
     purge   => true,
     force   => true,
     recurse => true,
