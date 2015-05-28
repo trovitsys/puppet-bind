@@ -161,7 +161,7 @@ define bind::zone (
       file {"${bind::params::zones_directory}/${name}.conf":
         ensure => absent,
       }
-      file {"${bind::params::slave_directory}/${name}.conf":
+      file {"${bind::params::slave_directory}/db.${name}":
         ensure => absent,
       }
     }

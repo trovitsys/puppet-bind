@@ -6,5 +6,5 @@ zone <%= @name %> IN {
   <% if @transfer_source and @transfer_source != '' -%>
   transfer-source <%= @transfer_source %>;
   <% end -%>
-  file "<%= scope.lookupvar("bind::params::slave_directory") %>/<%= @name %>.conf";
+  file "<%= scope.lookupvar("bind::params::slave_directory") %>/db.<%= @name %>";
 };
