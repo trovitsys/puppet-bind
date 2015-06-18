@@ -69,9 +69,6 @@ class bind::base inherits bind::params {
     owner   => root,
     group   => $bind::params::bind_group,
     mode    => '0770',
-    purge   => true,
-    force   => true,
-    recurse => true,
     require => Package['bind9'],
   }
 
