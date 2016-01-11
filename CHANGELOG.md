@@ -1,3 +1,31 @@
+## 2015-09-29 - Release 1.2.0
+
+- Add acceptance tests
+- Refactor module to use install/config/service
+- Fix ordering of service on RedHat systems
+
+## 2015-09-29 - Release 1.1.5
+
+- pass $::path to exec
+
+## 2015-09-16 - Release 1.1.4
+
+- fix default record order
+- add missing parameters to README (GH #55)
+- fix missing dollar in variable (GH #57)
+
+## 2015-08-21 - Release 1.1.3
+
+Use docker for acceptance tests
+
+## 2015-06-26 - Release 1.1.1
+
+Fix strict_variables activation with rspec-puppet 2.2
+
+## 2015-06-22 - Release 1.1.0
+
+Add support for "forward zone" thanks to @vide
+
 ## 2015-05-28 - Release 1.0.16
 
 Add beaker_spec_helper to Gemfile
